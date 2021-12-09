@@ -1,0 +1,526 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+header{
+    display: flex;
+}
+header .logo img{
+  height: 100px;
+  width: 125%;
+}
+header .nav_bar ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 150px;
+    list-style-type: none
+    
+}
+header .nav_bar a{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+header .nav_bar li{
+    padding-left: 65px;
+}
+
+.search_bar input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+}
+
+.nav_bar .search_bar {
+    color: blanchedalmond;
+}
+
+header .search_bar {
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 40px;
+}
+header .cart_bar {
+    display: flex;
+    align-items: center;
+}
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.categories .categorie img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+
+}
+.categories .categorie button{
+    margin-top: 9px;
+    background: #74716f1a;
+    width: 30%;
+    height: 67%;
+    position: absolute;
+    margin-left: -410px;
+    color: rgba(250, 250, 250, 0);
+}
+.categorie button:hover
+{
+    font-family: "Montserrat";
+    font-weight: 500;
+    background: rgba(151, 141, 141, 0.658);
+    color: #160e0e;
+    font-size: xx-large;
+    font-style: italic;
+
+}
+.categories{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.categorie_details {
+  font-weight: 600;
+  width: 200px;
+  text-align: center;
+}
+.category .title p{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #160e0e;
+    font-size: xx-large;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.service-details {
+  font-weight: 600;
+  width: 200px;
+  text-align: center;
+}
+.service i {
+  font-size: 50px;
+  color: #160e0e;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background: #e5e5e4;
+  padding: 15px;
+}
+
+footer .contacts .desc {
+  color: #160e0e;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+footer .contacts .desc h3{
+  font-size: 18px;
+}
+
+footer .contacts .desc p{
+  font-size: 14px;
+}
+
+footer .socialMedia a {
+  color: #160e0e;
+  text-decoration: none;
+  font-size: 50px;
+  margin: 10px;
+}
+.Content .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.Content .filtres {
+  padding: 11px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Content h3{
+  margin-bottom: 15px;
+}
+
+.Content .filtres .select select{
+  border: 0px; 
+  border-radius: 20px; 
+  height: 35px; 
+  background: #ecece7; 
+  margin-left: 70px;
+}
+.Content .filtres .select{
+  margin-top: 35px;
+  display: flex;
+}
+
+.Content .filtres .filtre{
+  margin-top: 35px;
+  display: flex;
+}
+
+.Content .filtres .filtre input{
+  width: 60px; 
+  border: 0px; 
+  border-radius: 20px; 
+  height: 23px; 
+  background: #ecece7; 
+  text-align: right; 
+  margin-right: 0px; 
+  margin-left: 46px;
+}
+
+.Content .filtres .filtre button{
+  background: #575353; 
+  font-size: larger;
+  margin-block-end: auto; 
+  color: #e5e5e4; 
+  margin-left: 140px; 
+  width: 105px; 
+  border-radius: 10px;  
+  font-family: revert;
+}
+.Content .filtres .filtre button:hover{
+  background: #e5e5e4;
+  color: #575353;
+  font-size: larger;
+  font-family: revert;
+  border: 1px solid #575353;
+  width: 105px; 
+}
+.Content .products {
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.Content .products .product {
+  height: 300px;
+}
+
+.Content .products .product img{
+  width: 70%;
+}
+.Content .products .product p{
+  font-family: 'Montserrat';
+  font-size: medium;
+  font-weight: 500;
+}
+.Content .products .product{
+  width: 300px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 15px;
+}
+.Content .products .product .product_container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Content .products .product .product_details{
+  position: absolute;
+  height: 100%;
+}
+.Content .products .product .view_product{
+  margin-left: 45px;
+  display: none;
+  position: absolute;
+  background: #4a4a483b;
+  width: 70%;
+  height: 105%;
+}
+.Content .products .product .view_product button{
+  bottom: 45%;
+  position: absolute;
+  right: 22%;
+  background: #ffffff9e;
+  font-size: medium;
+  margin-block-end: auto;
+  color: #1b1b1a;
+  width: 115px;
+  border-radius: 5px 0;
+  border: 0;
+  font-family: revert;
+}
+
+.product_Content .color input[name="color1"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #020202;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid #020202;
+}
+
+.product_Content .color input[name="color2"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ad150a;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid #ad150a;
+}
+.product_Content .color input[name="color3"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #19a119;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid #19a119;
+}
+.product_Content .color input[name="color4"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #01259b;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid #01259b;
+}
+
+.product_Content .color input[type='checkbox']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.product_Content{
+  display: flex;
+  padding: 60px;
+}
+.product_Content .product_details{
+  margin-left: 60px;
+}
+.product_Content .product_details div{
+  padding-bottom: 20px;
+}
+
+.product_Content .product_details p{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: larger;
+}
+.product_Content .product_details .title{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: x-large;
+}
+.product_Content .product_details .color{
+  display: flex;
+  justify-content: space-between;
+}
+.product_Content .product_details .size{
+  display: flex;
+}
+.product_Content .product_details i{
+  margin-left: 10px;
+  color: yellow;
+  line-height: 30px;
+}
+
+.product_Content .product_details .button{
+  text-align: center;
+}
+
+.product_Content .product_details .button button{
+  height: 50px;
+  border: 1px solid #4e2c2c;
+  background: #fdf0e7;
+}
+
+.commentaires h4{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: x-large;
+  margin-left: 5px;
+}
+.commentaires .commentaire{
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #c7bdbd;
+}
+
+.commentaires .commentaire .commentaire_info{
+  line-height: 25px;
+}
+
+.commentaires .commentaire .commentaire_details{
+  margin-left: 40px;
+  color: yellow;
+  line-height: 30px;
+}
+
+.commentaires .commentaire .commentaire_details p{
+  color: black;
+}
+
+.product_Content .product_details .size input[type="radio"].size {
+  display: none;
+  border-radius: 10px;
+}
+.product_Content .product_details .size input[type="radio"].size + label {
+  border: 1px solid #bbb7b7;
+  border-radius: 10px;
+}
+.product_Content .product_details .size input[type="radio"].size:hover + label {
+  background-color: #f4f4f2;
+  border: 1px solid #000;
+}
+.product_Content .product_details .size input[type="radio"].size:checked + label {
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.product_Content .product_details .size h3{
+  margin-right: 60px;
+}
+.product_Content .product_details .size label{
+  padding-top: 5px;
+  text-align: center;
+  width: 70px;
+  height: 31px;
+  margin-right: 25px;
+}
+#myform {
+  text-align: center;
+  padding: 5px;
+  border: 1px dotted #ccc;
+  margin: 2%;
+}
+.qty {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+
+.active
+{
+  background: #e5e5e4;
+  border-radius: 5px;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+
